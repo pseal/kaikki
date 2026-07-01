@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAIKKI — WHERE to Eat &amp; Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">KAIKKI <span class="logo-sub">Kaikille Suomessa</span></a>
+      <div class="controls">
+        <select id="citySelect" class="ctrl" aria-label="Select city">
+          <option value="helsinki">Helsinki</option>
+          <option value="tampere">Tampere</option>
+          <option value="turku">Turku</option>
+        </select>
+        <button id="geoBtn" class="ctrl geo-ctrl" title="Detect my location">📍</button>
+        <button id="langToggle" class="ctrl">FI</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <a href="index.html" class="page-back" data-i18n="back_btn">← Back</a>
+      <div class="page-circle-mini mini-food">🍽️</div>
+      <div class="page-heading">
+        <h1 data-i18n="food_title">WHERE to Eat &amp; Buy Groceries</h1>
+        <p data-i18n="food_sub">Food delivery, restaurants &amp; grocery stores in Finland</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-grid">
+
+    <div class="group-label" data-i18n="sec_delivery">Food delivery</div>
+    <a href="https://wolt.com/en/fin" target="_blank" rel="noopener" class="btn btn-primary-red">
+      <span>🚴 Wolt</span><span class="arr">↗</span>
+    </a>
+    <a href="https://www.ubereats.com/fi" target="_blank" rel="noopener" class="btn">
+      <span>🛵 Uber Eats</span><span class="arr">↗</span>
+    </a>
+
+    <div class="group-label" data-i18n="sec_restaurant">Restaurants</div>
+    <a href="https://www.tableonline.fi" target="_blank" rel="noopener" class="btn">
+      <span>🍽️ TableOnline — <span data-i18n="reserve_table">Reserve a table</span></span><span class="arr">↗</span>
+    </a>
+    <a href="https://www.google.com/maps/search/restaurants+near+me" target="_blank" rel="noopener" class="btn btn-primary-red">
+      <span data-i18n="find_restaurants">🔍 Find nearby restaurants</span><span class="arr">↗</span>
+    </a>
+
+    <div class="group-label" data-i18n="sec_grocery">Grocery stores</div>
+    <div class="btn-row">
+      <a href="https://www.s-kaupat.fi/myymalat?q=helsinki" id="link-sgroup" target="_blank" rel="noopener" class="btn">
+        <span>S-kaupat</span><span class="arr">↗</span>
+      </a>
+      <a href="https://www.k-ruoka.fi/kaupat?city=helsinki" id="link-kgroup" target="_blank" rel="noopener" class="btn">
+        <span>K-Ruoka</span><span class="arr">↗</span>
+      </a>
+    </div>
+    <a href="https://www.lidl.fi" target="_blank" rel="noopener" class="btn">
+      <span>🛒 Lidl Finland</span><span class="arr">↗</span>
+    </a>
+
+  </div>
+
+  <footer>
+    <p><strong>KAIKKI</strong> — Kaikille Suomessa &nbsp;·&nbsp; &copy; 2026 &nbsp;·&nbsp; <span data-i18n="footer_made">Made with ♥ for everyone in Finland</span></p>
+  </footer>
+
+</body>
+</html>

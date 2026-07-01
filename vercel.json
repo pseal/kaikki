@@ -1,0 +1,7 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/api/transit", "destination": "/api/transit.js" },
+    { "source": "/(.*)", "destination": "/public/$1" }
+  ]
+}

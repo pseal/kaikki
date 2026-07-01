@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAIKKI — Kaikille Suomessa</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">KAIKKI <span class="logo-sub">Kaikille Suomessa</span></a>
+      <div class="controls">
+        <select id="citySelect" class="ctrl" aria-label="Select city">
+          <option value="helsinki">Helsinki</option>
+          <option value="tampere">Tampere</option>
+          <option value="turku">Turku</option>
+        </select>
+        <button id="geoBtn" class="ctrl geo-ctrl" title="Detect my location">📍</button>
+        <button id="langToggle" class="ctrl">FI</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="home-hero">
+    <h1 data-i18n="home_title">Where, When &amp; What —<br><em>all of Finland, one place.</em></h1>
+    <p data-i18n="home_sub">Your everyday guide to eating, getting around, and shopping anywhere in Finland.</p>
+  </div>
+
+  <div class="circles-wrap">
+
+    <a class="circle-link" href="food.html">
+      <div class="circle circle-food">
+        <div class="circle-emoji">🍽️</div>
+        <div class="circle-word" data-i18n="word_where">WHERE</div>
+      </div>
+      <div class="circle-caption">
+        <strong data-i18n="circle_food_title">Eating &amp; Groceries</strong>
+        <span data-i18n="circle_food_sub">Delivery, restaurants &amp; grocery stores</span>
+      </div>
+    </a>
+
+    <a class="circle-link" href="travel.html">
+      <div class="circle circle-travel">
+        <div class="circle-emoji">🚌</div>
+        <div class="circle-word" data-i18n="word_when">WHEN</div>
+      </div>
+      <div class="circle-caption">
+        <strong data-i18n="circle_travel_title">Journey Planner</strong>
+        <span data-i18n="circle_travel_sub">Public transport, cabs &amp; car rental</span>
+      </div>
+    </a>
+
+    <a class="circle-link" href="shop.html">
+      <div class="circle circle-shop">
+        <div class="circle-emoji">🛍️</div>
+        <div class="circle-word" data-i18n="word_what">WHAT</div>
+      </div>
+      <div class="circle-caption">
+        <strong data-i18n="circle_shop_title">Clothes &amp; Accessories</strong>
+        <span data-i18n="circle_shop_sub">Fashion, malls &amp; secondhand</span>
+      </div>
+    </a>
+
+  </div>
+
+  <footer>
+    <p><strong>KAIKKI</strong> — Kaikille Suomessa &nbsp;·&nbsp; &copy; 2026 &nbsp;·&nbsp; <span data-i18n="footer_made">Made with ♥ for everyone in Finland</span></p>
+  </footer>
+
+</body>
+</html>

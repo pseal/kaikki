@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAIKKI — WHAT to Buy</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">KAIKKI <span class="logo-sub">Kaikille Suomessa</span></a>
+      <div class="controls">
+        <select id="citySelect" class="ctrl" aria-label="Select city">
+          <option value="helsinki">Helsinki</option>
+          <option value="tampere">Tampere</option>
+          <option value="turku">Turku</option>
+        </select>
+        <button id="geoBtn" class="ctrl geo-ctrl" title="Detect my location">📍</button>
+        <button id="langToggle" class="ctrl">FI</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <a href="index.html" class="page-back" data-i18n="back_btn">← Back</a>
+      <div class="page-circle-mini mini-shop">🛍️</div>
+      <div class="page-heading">
+        <h1 data-i18n="shopping_title">WHAT to Buy &amp; Wear</h1>
+        <p data-i18n="shop_sub">Fashion, shopping malls &amp; secondhand across Finland</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-grid">
+
+    <div class="vibe-card">
+      <div class="vibe-icon">🌤️</div>
+      <div>
+        <div class="vibe-label" data-i18n="vibe_label">Outfit tip</div>
+        <div id="vibe-text" data-i18n="vibe_default">Pack an extra layer — it's Finland!</div>
+      </div>
+    </div>
+
+    <div class="group-label" data-i18n="sec_fashion">Online fashion</div>
+    <a href="https://www.zalando.fi" target="_blank" rel="noopener" class="btn btn-primary-green">
+      <span>👗 Zalando Finland</span><span class="arr">↗</span>
+    </a>
+    <div class="btn-row">
+      <a href="https://www.hm.com/fi_fi/" target="_blank" rel="noopener" class="btn">
+        <span>H&amp;M</span><span class="arr">↗</span>
+      </a>
+      <a href="https://www.marimekko.com/fi_fi" target="_blank" rel="noopener" class="btn">
+        <span>Marimekko</span><span class="arr">↗</span>
+      </a>
+    </div>
+
+    <div class="group-label" data-i18n="sec_malls">Local shopping malls</div>
+    <div id="malls-container"></div>
+
+    <div class="group-label" data-i18n="sec_secondhand">Secondhand &amp; vintage</div>
+    <a href="https://www.tori.fi" target="_blank" rel="noopener" class="btn">
+      <span>♻️ Tori.fi</span><span class="arr">↗</span>
+    </a>
+
+  </div>
+
+  <footer>
+    <p><strong>KAIKKI</strong> — Kaikille Suomessa &nbsp;·&nbsp; &copy; 2026 &nbsp;·&nbsp; <span data-i18n="footer_made">Made with ♥ for everyone in Finland</span></p>
+  </footer>
+
+</body>
+</html>

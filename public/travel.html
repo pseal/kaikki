@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAIKKI — WHEN to Travel</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">KAIKKI <span class="logo-sub">Kaikille Suomessa</span></a>
+      <div class="controls">
+        <select id="citySelect" class="ctrl" aria-label="Select city">
+          <option value="helsinki">Helsinki</option>
+          <option value="tampere">Tampere</option>
+          <option value="turku">Turku</option>
+        </select>
+        <button id="geoBtn" class="ctrl geo-ctrl" title="Detect my location">📍</button>
+        <button id="langToggle" class="ctrl">FI</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <a href="index.html" class="page-back" data-i18n="back_btn">← Back</a>
+      <div class="page-circle-mini mini-travel">🚌</div>
+      <div class="page-heading">
+        <h1 data-i18n="travel_title">WHEN to Start the Journey</h1>
+        <p data-i18n="travel_sub">Public transport, cabs &amp; car rental across Finland</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-grid">
+
+    <div class="group-label" data-i18n="sec_public">Public transport</div>
+    <a href="https://www.hsl.fi/en" id="link-transit" target="_blank" rel="noopener" class="btn btn-primary-blue">
+      <span id="transit-label">🚌 HSL — Journey Planner</span><span class="arr">↗</span>
+    </a>
+    <a href="https://www.vr.fi/en" target="_blank" rel="noopener" class="btn">
+      <span>🚆 VR — <span data-i18n="train_travel">Train travel</span></span><span class="arr">↗</span>
+    </a>
+
+    <div class="group-label" data-i18n="sec_cab">Cab services</div>
+    <div class="btn-row">
+      <a href="https://bolt.eu/en-fi/" target="_blank" rel="noopener" class="btn">
+        <span>⚡ Bolt</span><span class="arr">↗</span>
+      </a>
+      <a href="https://www.uber.com/fi/en/" target="_blank" rel="noopener" class="btn">
+        <span>🚗 Uber</span><span class="arr">↗</span>
+      </a>
+    </div>
+    <a href="https://www.taksi.fi" target="_blank" rel="noopener" class="btn">
+      <span>🚕 Taksi Finland</span><span class="arr">↗</span>
+    </a>
+
+    <div class="group-label" data-i18n="sec_rental">Car rental</div>
+    <div class="btn-row">
+      <a href="https://www.hertz.fi" target="_blank" rel="noopener" class="btn">
+        <span>🔑 Hertz</span><span class="arr">↗</span>
+      </a>
+      <a href="https://www.rentalcars.com" target="_blank" rel="noopener" class="btn">
+        <span>🚘 Rentalcars</span><span class="arr">↗</span>
+      </a>
+    </div>
+
+    <div class="live-panel">
+      <div class="live-header">
+        <div class="live-dot"></div>
+        <span data-i18n="live_label">Live nearby stops</span>
+      </div>
+      <p class="panel-loading" id="stops-loading" data-i18n="loading_transit">Looking up nearby stops…</p>
+      <ul id="stops-list"></ul>
+    </div>
+
+  </div>
+
+  <footer>
+    <p><strong>KAIKKI</strong> — Kaikille Suomessa &nbsp;·&nbsp; &copy; 2026 &nbsp;·&nbsp; <span data-i18n="footer_made">Made with ♥ for everyone in Finland</span></p>
+  </footer>
+
+</body>
+</html>
