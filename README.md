@@ -23,7 +23,7 @@ To clone and explore the multi-page file structure locally:
 
 ```bash
 # Clone the repository
-git clone [https://github.com/pseal/kaikki.git](https://github.com/pseal/kaikki.git)
+git clone https://github.com/pseal/kaikki.git
 
 # Navigate into the project directory
 cd kaikki
