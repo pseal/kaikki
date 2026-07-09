@@ -1,4 +1,4 @@
-# KAIKKI (Kaikille Suomessa) 🇫🇮
+# KAIKKI (Kaikille Suomessa)
 
 A comprehensive, multi-page city guide aggregator designed to streamline daily navigation, dining, and retail discovery across Finland. Built using a modular, performant architecture, KAIKKI centralizes disparate lifestyle services into an intuitive, high-fidelity interface.
 
